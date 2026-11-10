@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotaBuff — учебная работа</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <img src="logo.png" alt="DotaBuff" class="logo-img">
+            <span class="logo-text">DotaBuff</span>
+        </div>
+        <nav class="main-nav">
+            <a href="#heroes" class="nav-link active">Герои</a>
+            <a href="meta.html" class="nav-link">Мета</a>
+            <a href="matchups.html" class="nav-link">Матчапы</a>
+            <a href="#stats" class="nav-link">Статистика</a>
+        </nav>
+<input type="checkbox" id="loginToggle" class="login-toggle">
+
+<label for="loginToggle" class="login-btn"><a href="register.html">Регистрация</a></label>
+</div>
+<button class="burger" id="burgerBtn" aria-label="Открыть меню">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+    </header>
+    <nav class="mobile-nav" id="mobileNav">
+    <a href="#heroes">Герои</a>
+    <a href="meta.html">Мета</a>
+    <a href="matchups.html">Матчапы</a>
+    <a href="#stats">Статистика</a>
+    <a href="register.html">Регистрация</a>
+</nav>
+
+<div class="overlay" id="overlay"></div>
+
+    <main class="layout">
+        <aside class="filters">
+            <h3 class="filters-title">Фильтры</h3>
+
+            <div class="filter-group">
+                <span class="filter-label">Роль</span>
+                <div class="filter-chips">
+                    <input type="radio" name="role" id="role-all" class="filter-radio" checked>
+                    <label for="role-all" class="chip">Все</label>
+
+                    <input type="radio" name="role" id="role-carry" class="filter-radio">
+                    <label for="role-carry" class="chip">Carry</label>
+
+                    <input type="radio" name="role" id="role-mid" class="filter-radio">
+                    <label for="role-mid" class="chip">Mid</label>
+
+                    <input type="radio" name="role" id="role-offlane" class="filter-radio">
+                    <label for="role-offlane" class="chip">Offlane</label>
+
+                    <input type="radio" name="role" id="role-support" class="filter-radio">
+                    <label for="role-support" class="chip">Support</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Атрибут</span>
+                <div class="filter-chips">
+                    <input type="radio" name="attr" id="attr-all" class="filter-radio" checked>
+                    <label for="attr-all" class="chip">Все</label>
+
+                    <input type="radio" name="attr" id="attr-str" class="filter-radio">
+                    <label for="attr-str" class="chip">Сила</label>
+
+                    <input type="radio" name="attr" id="attr-agi" class="filter-radio">
+                    <label for="attr-agi" class="chip">Ловкость</label>
+
+                    <input type="radio" name="attr" id="attr-int" class="filter-radio">
+                    <label for="attr-int" class="chip">Интеллект</label>
+                </div>
+            </div>
+
+            <a href="" class="reset-btn">Сбросить</a>
+        </aside>
+
+        <section class="heroes-area">
+            <div class="heroes-header">
+                <h2>Популярные герои</h2>
+                <span class="heroes-count">Патч 7.36c</span>
+            </div>
+
+            <div class="hero-grid">
+                <article class="hero-card role-offlane attr-str">
+                    <div class="hero-portrait attr-str">
+                        <img src="axe.jpg" alt="Axe" class="hero-img">
+                        <span class="winrate">54.2%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Offlane</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate</span>
+                                <span class="stat-value good">54.2%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pickrate</span>
+                                <span class="stat-value">18.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card role-carry attr-agi">
+                    <div class="hero-portrait attr-agi">
+                        <img src="drowka.jpg" alt="Drow Ranger" class="hero-img">
+                        <span class="winrate">52.8%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Drow Ranger</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Carry</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate</span>
+                                <span class="stat-value good">52.8%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pickrate</span>
+                                <span class="stat-value">12.3%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card role-mid attr-int">
+                    <div class="hero-portrait attr-int">
+                        <img src="lina.jpg" alt="Lina" class="hero-img">
+                        <span class="winrate">51.5%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Lina</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Mid</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate</span>
+                                <span class="stat-value">51.5%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pickrate</span>
+                                <span class="stat-value">9.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card role-support attr-int">
+                    <div class="hero-portrait attr-int">
+                        <img src="CM.jpg" alt="Crystal Maiden" class="hero-img">
+                        <span class="winrate">55.6%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Crystal Maiden</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Support</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate</span>
+                                <span class="stat-value good">55.6%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pickrate</span>
+                                <span class="stat-value">15.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card role-carry attr-agi">
+                    <div class="hero-portrait attr-agi">
+                        <img src="jaga.webp" alt="Juggernaut" class="hero-img">
+                        <span class="winrate">49.3%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Juggernaut</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Carry</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate</span>
+                                <span class="stat-value bad">49.3%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pickrate</span>
+                                <span class="stat-value">11.1%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card role-carry attr-uni">
+                    <div class="hero-portrait attr-uni">
+                        <img src="MK.jfif" alt="Monkey King" class="hero-img">
+                        <span class="winrate">50.1%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Monkey King</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Carry</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate</span>
+                                <span class="stat-value">50.1%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pickrate</span>
+                                <span class="stat-value">7.4%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <aside class="meta-panel" id="meta">
+            <h3 class="meta-title">Мета-советы</h3>
+
+            <div class="meta-block">
+                <span class="meta-label">Лучший пик против</span>
+                <div class="meta-heroes">
+                    <a href="#" class="meta-chip">Pudge</a>
+                    <a href="#" class="meta-chip">Sniper</a>
+                    <a href="#" class="meta-chip">Zeus</a>
+                </div>
+            </div>
+
+            <div class="meta-block">
+                <span class="meta-label">Сильные стороны</span>
+                <ul class="meta-list">
+                    <li>Ранний пуш линий</li>
+                    <li>Контроль рун</li>
+                    <li>Хороший хайграунд</li>
+                </ul>
+            </div>
+
+            <div class="meta-block">
+                <span class="meta-label">Слабые стороны</span>
+                <ul class="meta-list weak">
+                    <li>Уязвим к ганкам</li>
+                    <li>Зависит от маны</li>
+                </ul>
+            </div>
+
+            <a href="#heroes" class="advice-btn">Получить совет</a>
+        </aside>
+    </main>
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-copy">© 2026 DotaBuff</p>
+        <nav class="footer-links">
+            <a href="mailto:matupaevislam@gmail.com">matupaevislam@gmail.com</a>
+            <a href="https://github.com/Gulldann14" target="_blank">GitHub: Gulldann14</a>
+            <a href="terms.html">Пользовательское соглашение</a>
+        </nav>
+    </div>
+</footer>
+<script src="js.js"></script>
+</body>
+</html>

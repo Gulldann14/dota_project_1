@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матчапы · DotaBuff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <img src="logo.png" alt="DotaBuff" class="logo-img">
+            <span class="logo-text">DotaBuff</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Герои</a>
+            <a href="meta.html" class="nav-link">Мета</a>
+            <a href="matchups.html" class="nav-link active">Матчапы</a>
+            <a href="#stats" class="nav-link">Статистика</a>
+        </nav>
+<input type="checkbox" id="loginToggle" class="login-toggle">
+
+<label for="loginToggle" class="login-btn"><a href="register.html">Регистрация</a></label>
+</div>
+<button class="burger" id="burgerBtn" aria-label="Открыть меню">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+    </header>
+    <nav class="mobile-nav" id="mobileNav">
+    <a href="#heroes">Герои</a>
+    <a href="meta.html">Мета</a>
+    <a href="matchups.html">Матчапы</a>
+    <a href="#stats">Статистика</a>
+    <a href="register.html">Регистрация</a>
+</nav>
+    <main class="layout">
+        <aside class="filters">
+            <h3 class="filters-title">Герой</h3>
+
+            <div class="filter-group">
+                <span class="filter-label">Выберите героя</span>
+                <div class="filter-chips">
+                    <input type="radio" name="hero" id="hero-axe" class="filter-radio" checked>
+                    <label for="hero-axe" class="chip">Axe</label>
+
+                    <input type="radio" name="hero" id="hero-drow" class="filter-radio">
+                    <label for="hero-drow" class="chip">Drow</label>
+
+                    <input type="radio" name="hero" id="hero-lina" class="filter-radio">
+                    <label for="hero-lina" class="chip">Lina</label>
+
+                    <input type="radio" name="hero" id="hero-cm" class="filter-radio">
+                    <label for="hero-cm" class="chip">Crystal Maiden</label>
+
+                    <input type="radio" name="hero" id="hero-jugg" class="filter-radio">
+                    <label for="hero-jugg" class="chip">Juggernaut</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Ранг</span>
+                <div class="filter-chips">
+                    <input type="radio" name="rank" id="rank-all" class="filter-radio" checked>
+                    <label for="rank-all" class="chip">Все</label>
+
+                    <input type="radio" name="rank" id="rank-legend" class="filter-radio">
+                    <label for="rank-legend" class="chip">Legend</label>
+
+                    <input type="radio" name="rank" id="rank-immortal" class="filter-radio">
+                    <label for="rank-immortal" class="chip">Immortal</label>
+                </div>
+            </div>
+        </aside>
+
+        <section class="heroes-area">
+            <div class="heroes-header">
+                <h2>Матчапы — Axe</h2>
+                <span class="heroes-count">Патч 7.36c · Immortal</span>
+            </div>
+
+            <div class="hero-grid">
+                <article class="hero-card">
+                    <div class="hero-portrait attr-str">
+                        <img src="axe.jpg" alt="Axe" class="hero-img">
+                        <span class="winrate bad">42.1%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe vs Timbersaw</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Сложный</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate Axe</span>
+                                <span class="stat-value bad">42.1%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Матчей</span>
+                                <span class="stat-value">12.4k</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card">
+                    <div class="hero-portrait attr-agi">
+                        <img src="drowka.jpg" alt="Drow Ranger" class="hero-img">
+                        <span class="winrate bad">45.6%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe vs Drow Ranger</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Сложный</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate Axe</span>
+                                <span class="stat-value bad">45.6%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Матчей</span>
+                                <span class="stat-value">9.8k</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card">
+                    <div class="hero-portrait attr-int">
+                        <img src="lina.jpg" alt="Lina" class="hero-img">
+                        <span class="winrate">50.2%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe vs Lina</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Ровный</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate Axe</span>
+                                <span class="stat-value">50.2%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Матчей</span>
+                                <span class="stat-value">8.1k</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card">
+                    <div class="hero-portrait attr-int">
+                        <img src="CM.jpg" alt="Crystal Maiden" class="hero-img">
+                        <span class="winrate good">58.4%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe vs Crystal Maiden</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Лёгкий</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate Axe</span>
+                                <span class="stat-value good">58.4%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Матчей</span>
+                                <span class="stat-value">15.2k</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card">
+                    <div class="hero-portrait attr-agi">
+                        <img src="jaga.webp" alt="Juggernaut" class="hero-img">
+                        <span class="winrate good">57.1%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe vs Juggernaut</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Лёгкий</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate Axe</span>
+                                <span class="stat-value good">57.1%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Матчей</span>
+                                <span class="stat-value">11.7k</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hero-card">
+                    <div class="hero-portrait attr-uni">
+                        <img src="MK.jfif" alt="Monkey King" class="hero-img">
+                        <span class="winrate good">56.3%</span>
+                    </div>
+                    <div class="hero-info">
+                        <h4 class="hero-name">Axe vs Monkey King</h4>
+                        <div class="hero-roles">
+                            <span class="role-tag">Лёгкий</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">Winrate Axe</span>
+                                <span class="stat-value good">56.3%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Матчей</span>
+                                <span class="stat-value">7.6k</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<aside class="meta-panel">
+    <div class="meta-for meta-for-axe">
+        <h3 class="meta-title">Итог по Axe</h3>
+        <div class="meta-block">
+            <span class="meta-label">Хорош против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Crystal Maiden</a>
+                <a href="#" class="meta-chip">Juggernaut</a>
+            </div>
+        </div>
+        <div class="meta-block">
+            <span class="meta-label">Слаб против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Timbersaw</a>
+                <a href="#" class="meta-chip">Drow Ranger</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="meta-for meta-for-drow">
+        <h3 class="meta-title">Итог по Drow Ranger</h3>
+        <div class="meta-block">
+            <span class="meta-label">Хорош против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Sniper</a>
+                <a href="#" class="meta-chip">Zeus</a>
+            </div>
+        </div>
+        <div class="meta-block">
+            <span class="meta-label">Слаб против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Axe</a>
+                <a href="#" class="meta-chip">Slark</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="meta-for meta-for-lina">
+        <h3 class="meta-title">Итог по Lina</h3>
+        <div class="meta-block">
+            <span class="meta-label">Хорош против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Pudge</a>
+                <a href="#" class="meta-chip">Sniper</a>
+            </div>
+        </div>
+        <div class="meta-block">
+            <span class="meta-label">Слаб против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Anti-Mage</a>
+                <a href="#" class="meta-chip">Storm Spirit</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="meta-for meta-for-cm">
+        <h3 class="meta-title">Итог по Crystal Maiden</h3>
+        <div class="meta-block">
+            <span class="meta-label">Хорош против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Meepo</a>
+                <a href="#" class="meta-chip">Broodmother</a>
+            </div>
+        </div>
+        <div class="meta-block">
+            <span class="meta-label">Слаб против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Axe</a>
+                <a href="#" class="meta-chip">Slark</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="meta-for meta-for-jugg">
+        <h3 class="meta-title">Итог по Juggernaut</h3>
+        <div class="meta-block">
+            <span class="meta-label">Хорош против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Zeus</a>
+                <a href="#" class="meta-chip">Crystal Maiden</a>
+            </div>
+        </div>
+        <div class="meta-block">
+            <span class="meta-label">Слаб против</span>
+            <div class="meta-heroes">
+                <a href="#" class="meta-chip">Axe</a>
+                <a href="#" class="meta-chip">Bristleback</a>
+            </div>
+        </div>
+    </div>
+</aside>
+    </main>
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-copy">© 2026 DotaBuff</p>
+        <nav class="footer-links">
+            <a href="mailto:matupaevislam@gmail.com">matupaevislam@gmail.com</a>
+            <a href="https://github.com/Gulldann14" target="_blank">GitHub: Gulldann14</a>
+            <a href="terms.html">Пользовательское соглашение</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
